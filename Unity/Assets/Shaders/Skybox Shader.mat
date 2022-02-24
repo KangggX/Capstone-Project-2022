@@ -53,6 +53,10 @@ Material:
     - _Moon_Radius: 0.06
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Speed: 0.01
+    - _Star_Amount: 12
+    - _Star_Power: 342.5
+    - _Star_Speed: 1
     - _Sun_Radius: 0.09
     m_Colors:
     - _Day_Bottom_Color: {r: 0.050980393, g: 0.7019608, b: 0.9607843, a: 0}
@@ -62,6 +66,6 @@ Material:
     - _Night_Bottom_Color: {r: 0.02745098, g: 0, b: 0.16078432, a: 0}
     - _Night_Horizon_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Night_Top_Color: {r: 0.02, g: 0.02, b: 0.02, a: 0}
-    - _Sun_Color: {r: 3.9999995, g: 1.445026, b: 0, a: 0}
+    - _Sun_Color: {r: 3.8897412, g: 1.6940105, b: 0.12843493, a: 0}
     - _Sunset_Rise_Color: {r: 0.6698113, g: 0.44713178, b: 0.11058204, a: 0}
   m_BuildTextureStacks: []

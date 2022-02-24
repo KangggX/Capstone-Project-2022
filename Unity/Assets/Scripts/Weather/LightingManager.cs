@@ -5,9 +5,13 @@ using UnityEngine;
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
 {
+    [Header("Lighting Properties")]
     [Expandable] [SerializeField] private Light _directionalLight;
     [Expandable] [SerializeField] private LightingPreset _lightPreset;
+
+    [Header("Cycle Time")]
     [SerializeField, Range(0, 24)] private float _timeOfDay;
+    [SerializeField] private float _secondsPerCycle = 24;
 
     private void OnValidate()
     {
@@ -39,9 +43,9 @@ public class LightingManager : MonoBehaviour
     {
         if (Application.isPlaying)
         {
-            _timeOfDay += Time.deltaTime;
+            _timeOfDay += Time.deltaTime * (24 / _secondsPerCycle);
             _timeOfDay %= 24;
-            Debug.Log(_timeOfDay);
+
             UpdateLighting(_timeOfDay / 24);
         }
         else
